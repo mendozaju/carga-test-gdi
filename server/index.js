@@ -6,11 +6,8 @@ var routes = require('./routes');
 
 var server = new Hapi.Server();
 
-<<<<<<< HEAD
-server.connection({ port: process.env.PORT || 5000 });
-=======
+
 server.connection({ port: process.env.PORT || 3000 });
->>>>>>> develop
 
 server.route(routes);
 
