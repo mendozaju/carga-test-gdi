@@ -2,18 +2,13 @@
 
 
 var Hapi = require('hapi');
+var routes = require('./routes');
 
 var server = new Hapi.Server();
 
-server.connection({ port: 3000 });
+server.connection({ port: process.env.PORT || 3000 });
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-        reply('Hello, world!');
-    }
-});
+server.route(routes);
 
 server.start(function() {
     console.info('Hapijs server running at ' +
