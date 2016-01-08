@@ -4,6 +4,6 @@
  * API impl
  */
 exports.header = function(request, reply) {
-	reply('Login!!!');
+	reply({data:'Servicio de login'});
 };
 

@@ -7,6 +7,6 @@ var handler = require('./handler');
  */
 module.exports = [{
     method: ['GET'],
-    path: '/signup',
+    path: '/api',
     handler: handler.header
 }];
