@@ -6,7 +6,7 @@ var handler = require('./handler');
  * Exports: ROUTES
  */
 module.exports = [{
-    method: ['GET'],
-    path: '/signup',
+    method: ['POST','GET'],
+    path: '/singup',
     handler: handler.header
 }];
