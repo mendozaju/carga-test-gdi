@@ -2,13 +2,14 @@
 
 
 var Hapi = require('hapi');
+var Inert = require('inert');
 var routes = require('./routes');
 
 var server = new Hapi.Server();
 
 
 server.connection({ port: process.env.PORT || 3000 });
-
+server.register(Inert);
 server.route(routes);
 
 server.start(function() {
