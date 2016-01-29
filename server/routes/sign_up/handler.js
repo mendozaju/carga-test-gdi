@@ -4,6 +4,9 @@
  * API impl
  */
 exports.header = function(request, reply) {
-	reply({statusCode: 200, description:'OK'});
+    reply({
+        statusCode: 200,
+        description: 'OK',
+        payload: request.payload
+    });
 };
-
