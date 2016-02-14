@@ -1,4 +1,4 @@
-var app = angular.module('mainModule', ['ngRoute']);
+var app = angular.module('mainModule', ['ngRoute','login','home']);
 
 // Configuro todas las rutas
 app.config(function($routeProvider) {

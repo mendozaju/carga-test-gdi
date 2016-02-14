@@ -5,7 +5,7 @@
   font-weight: 200;
   background-color: #2e353d;
   position: fixed;
-  top: 50px;
+  top: 52px;
   width: inherit;
   height: 100%;
   color: #e1ffff;
@@ -142,4 +142,14 @@
 body {
   margin: 0px;
   padding: 0px;
+}
+
+.custom-header {
+  background-color: #23282E
+  margin-left:1px;
+}
+
+.menu-logo{
+    width: 30px;
+    height: 30px;
 }

@@ -12,7 +12,7 @@ module.exports = [{
     method: 'GET',
     path: '/',
     handler: {
-        file: 'static/app/index.html'
+        file: 'static/app/login/index.html'
     }
 }, {
     method: 'GET',

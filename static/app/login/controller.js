@@ -1,7 +1,14 @@
-var app = angular.module('login', []);
+var Login = angular.module('login', []);
 
-app.controller('loginController', ['$scope', function($scope) {
+Login.controller('loginController', ['$scope', function($scope) {
     $scope.title = "Hola Angular, usando controller!";
 }]);
+
+Login.directive('loginForm', function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/resources/app/login/login.html'
+    };
+});
 
 
