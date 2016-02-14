@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+
+<head>
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/custom.css" rel="stylesheet">
+    <script src="/resources/js/angular.min.js" /></script>
+    <script src="/resources/js/jquery-2.2.0.min.js" /></script>
+    <script src="/resources/js/angular-route.min.js" /></script>
+    <script src="/resources/app/app.js" /></script>
+</head>
+
+<body>
+    <!-- MENU SUPERIOR -->
+    <nav class="navbar navbar-default">
+        <a class="navbar-brand" href="#">
+            <img alt="Brand" src="...">
+        </a>
+        <button type="button" class="btn btn-default navbar-btn ">Sign in</button>
+    </nav>
+    <!-- MENU IZQUIERDO -->
+    <div class="row">
+        <div class="col-md-2">
+            <div class="nav-side-menu">
+                <div class="brand">Brand Logo</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li data-toggle="collapse" data-target="#products" class="collapsed active">
+                            <a href="#"><i class="fa fa-gift fa-lg"></i> Mi cuenta <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="products">
+                            <li class="active"><a href="#">Opcion activa de mi cuenta</a></li>
+                            <li><a href="#">Opciones de mi cuenta</a></li>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed">
+                            <a href="#"><i class="fa fa-globe fa-lg"></i> Registro de usuarios <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="service">
+                            <li>Alta de usuario</li>
+                            <li>Baja de usuario</li>
+                            <li>New Service 3</li>
+                        </ul>
+                        <li data-toggle="collapse" data-target="#new" class="collapsed">
+                            <a href="#"><i class="fa fa-car fa-lg"></i> Tarifas <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="new">
+                            <li>Alta de origenes y destinos/li>
+                                <li>Baja de origenes y destinos</li>
+                        </ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-car fa-lg"></i> Seguimiento de usuarios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-users fa-lg"></i> Cargas en transito
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div ng-view></div>
+        </div>
+    </div>
+    <script src="/resources/js/bootstrap.min.js" /></script>
+</body>
+
+</html>
