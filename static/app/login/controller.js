@@ -1,7 +1,12 @@
 var Login = angular.module('login', []);
 
 Login.controller('loginController', ['$scope', function($scope) {
-    $scope.title = "Hola Angular, usando controller!";
+    
+    $scope.gologin = function(){
+    	$window.location.href = '/profile';
+    };
+
+
 }]);
 
 Login.directive('loginForm', function() {

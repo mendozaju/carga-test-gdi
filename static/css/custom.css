@@ -144,6 +144,19 @@ body {
   padding: 0px;
 }
 
+/*Login styles*/
+.login-header {
+  padding: 1px;
+  width: 128px;
+  margin-left: 5%;
+}
+
+.title {
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+/*Headers styles*/
 .custom-header {
   background-color: #23282E
   margin-left:1px;
